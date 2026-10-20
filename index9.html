@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout với HTML5 Semantic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. HEADER: Phần đầu trang (Logo, Banner) -->
+    <header>
+        <h1>Trang Web Của Tôi</h1>
+    </header>
+
+    <!-- 2. NAV: Thanh điều hướng (Menu) -->
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Dịch vụ</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+
+    <!-- Vùng bao bọc nội dung chính để dàn trang (dùng div hoặc main) -->
+    <div class="main-layout">
+        
+        <!-- 3. ASIDE: Thanh bên trái (Sidebar) -->
+        <aside class="left-sidebar">
+            <h3>Menu Phụ</h3>
+            <ul>
+                <li>Danh mục 1</li>
+                <li>Danh mục 2</li>
+                <li>Danh mục 3</li>
+            </ul>
+        </aside>
+
+        <!-- 4. SECTION & ARTICLE: Nội dung chính -->
+        <main class="content">
+            <!-- SECTION: Một khu vực chủ đề -->
+            <section>
+                <h2>Bài viết mới nhất</h2>
+                
+                <!-- ARTICLE: Một nội dung độc lập (bài viết, tin tức) -->
+                <article>
+                    <h3>Tiêu đề bài viết 1</h3>
+                    <p>Nội dung của bài viết số 1. Thẻ article dùng cho một nội dung có thể đứng độc lập.</p>
+                </article>
+
+                <article>
+                    <h3>Tiêu đề bài viết 2</h3>
+                    <p>Nội dung của bài viết số 2...</p>
+                </article>
+            </section>
+        </main>
+
+        <!-- 3. ASIDE: Thanh bên phải (Quảng cáo, tin phụ) -->
+        <aside class="right-sidebar">
+            <h3>Quảng Cáo</h3>
+            <p>Không gian quảng cáo</p>
+        </aside>
+
+    </div>
+
+    <!-- 5. FOOTER: Chân trang -->
+    <footer>
+        <p>&copy; 2023 Bản quyền thuộc về Trang Web Của Tôi.</p>
+    </footer>
+
+</body>
+</html>
